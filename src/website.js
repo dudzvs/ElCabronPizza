@@ -39,9 +39,21 @@ function createNav() {
   return nav;
 }
 
+function createMain() {
+  const main = document.createElement('main');
+  main.classList.add('main');
+  main.setAttribute("id", "main");
+
+  return main
+}
+
 function initizalizeWebsite() {
   const content = document.getElementById('content');
+
   content.appendChild(createHeader());
+  content.appendChild(createMain());
+
+  loadHome();
 }
 
 export default initizalizeWebsite;
