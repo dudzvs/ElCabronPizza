@@ -4,7 +4,87 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "MexiFont";
+  src: url('./assets/fonts/MexiFont.ttf');
+}
+
+:root {
+  font-size: 62.5%;
+
+  --header-bg:	#f991219c;
+  --main-bg: 	#ffc85bb4;
+  --text-color: #e21717;
+}
+
 body {
   background: #FFFFFF url("./assets/BgImg.jpg") no-repeat right top fixed;
-  background-size: 100%;
+  background-size: cover;
+}
+
+.header {
+  background-color: var(--header-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+header h1 {
+  font-family: 'MexiFont';
+  margin-bottom: 1rem;
+}
+
+button {
+  border-style: none;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-nav {
+  padding: 2rem;
+  font-size: 3rem;
+  background-color: transparent;
+}
+
+.button-nav:hover {
+  transform: scale(1.1);
+}
+
+.button-nav:active {
+  transform: scale(0.9);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.main {
+  max-width: 700px;
+  line-height: 6rem;
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 6rem 0;
+  font-family: 'MexiFont';
+  color: var(--text-color);
+  font-size: 3.5rem;
+  background-color: var(--main-bg);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 525px;
+  width: 618px;
 }
