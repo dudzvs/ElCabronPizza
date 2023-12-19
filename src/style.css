@@ -13,13 +13,17 @@
   font-size: 62.5%;
 
   --header-bg:	#f991219c;
-  --main-bg: 	#ffc85bb4;
-  --text-color: #e21717;
+  --main-bg: 	#0c08005d;
+  --text-color: #ee1111;
 }
 
 body {
-  background: #FFFFFF url("./assets/BgImg.jpg") no-repeat right top fixed;
+  background: #FFFFFF url("./assets/images/BgImg.jpg") no-repeat right top fixed;
   background-size: cover;
+}
+
+header {
+  position: fixed;
 }
 
 .header {
@@ -69,11 +73,13 @@ button {
 }
 
 .main {
-  max-width: 700px;
+  min-width: 700px;
+  min-height: 600px;
+  overflow-y: auto;
   line-height: 6rem;
   padding: 2rem;
   border-radius: 15px;
-  margin: 6rem 0;
+  margin: 30rem 0;
   font-family: 'MexiFont';
   color: var(--text-color);
   font-size: 3.5rem;
