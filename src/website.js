@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -6,7 +7,7 @@ function createHeader() {
 
   const restaurantName = document.createElement('h1');
   restaurantName.classList.add("restaurant-name");
-  restaurantName.textContent = "El Cabron";
+  restaurantName.textContent = "ElCabron";
 
   header.appendChild(restaurantName);
   header.appendChild(createNav())
@@ -25,7 +26,8 @@ function createNav() {
   const menuBtn= document.createElement('button');
   menuBtn.classList.add('button-nav');
   menuBtn.textContent = 'Menu';
-  //loadMenu()
+  
+  menuBtn.onclick = () => loadMenu();
 
   const contactBtn = document.createElement('button');
   contactBtn.classList.add('button-nav');
