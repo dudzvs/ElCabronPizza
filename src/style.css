@@ -87,7 +87,7 @@ button {
 }
 .menu {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto);
   animation: fadeIn 1.5s;
 }
 
@@ -115,6 +115,10 @@ button {
   animation: fadeIn 1.5s;
 }
 
+.contact {
+  animation: fadeIn 1.5s;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -123,14 +127,15 @@ button {
   background-color: var(--text-color);
 }
 
-img{
+.menu img{
   background-color: var(--header-bg);
   border-radius: 15px;
   cursor: pointer;
 }
 
-img:hover {
+.menu img:hover {
   transform: scale(1.1);
+  transition: .5s;
 }
 
 @keyframes fadeIn {

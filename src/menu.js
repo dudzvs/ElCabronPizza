@@ -26,7 +26,7 @@ function createMenu() {
   menu.appendChild(
     createMenuItem(
       "ElCabron",
-      "Molho, muçarela, calabresa apimentada, berinjela, cebola fatiada"
+      "Molho, muçarela, calabresa apimentada, berinjela"
     )
   );
 
@@ -44,7 +44,7 @@ function createMenuItem(name, description) {
   foodDescription.textContent = description;
 
   const foodImg = document.createElement('img');
-  foodImg.src = `/src/assets/images/${name.toLowerCase()}.png`;
+  foodImg.src = `../src/assets/images/${name.toLowerCase()}.png`;
 
   menuItem.appendChild(foodImg);
   menuItem.appendChild(foodName);

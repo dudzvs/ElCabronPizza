@@ -1,5 +1,6 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContact from "./contact";
 
 function createHeader() {
   const header = document.createElement("header");
@@ -32,7 +33,7 @@ function createNav() {
   const contactBtn = document.createElement('button');
   contactBtn.classList.add('button-nav');
   contactBtn.textContent = 'Contact';
-  //loadContact()
+  contactBtn.onclick = () => loadContact();
 
   nav.appendChild(homeBtn);
   nav.appendChild(menuBtn);
